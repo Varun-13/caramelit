@@ -46,7 +46,4 @@ if(empty($error)){
 else{
 	echo "Please fill out email and password to Login";
 }
-
-
-
 ?>
