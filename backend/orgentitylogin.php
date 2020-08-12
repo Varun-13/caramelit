@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
           <div class="card-body">
 
-            <h2 class="card-title text-center"><b>Sign In As Organization</b></h2>
+            <h2 class="card-title text-center"><b>Organization -Sign In</b></h2>
             	
             <form class="form-signin"  method="post">
               
