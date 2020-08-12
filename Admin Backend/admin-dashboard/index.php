@@ -41,7 +41,7 @@
               }
             $(function() {
                var availableTutorials = [
-               'Core UI','Advanced UI','React.js','Vue.js','AngularJS','Asp.net','GoLang','Coure UI Stack','Node.js','Java','Python','Core Java','Advance Java','.Net','.Net Core','MEAN Stack','MESN Stack','MEVN Stack','Ruby'	
+               'Core UI','Advanced UI','React.js','Vue.js','AngularJS','Asp.net','GoLang','Coure UI Stack','Node.js','Java','Python','Core Java','Advance Java','.Net','.Net Core','MEAN Stack','MESN Stack','MEVN Stack','Ruby'    
                ];
                $( "#automplete-3" ).autocomplete({
                   minLength:1,   
@@ -59,29 +59,10 @@
             <label href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</label>
             <img class="logo2" src="images/caramelacademy.png" width="200px" height="70px">
             <label class="name" href="#">Hello Admin!</label>
-            <a href="#courseSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle option active"><i class="fa fa-book" aria-hidden="true" style="color: aliceblue"></i>
-                Courses</a>
-                <ul class="list-unstyled collapse" id="courseSubmenu">
-                    <li class="suboption">
-                    <a href="#">Add</a>
-                    </li>
-                    <li class="suboption">
-                    <a href="#">List</a>
-                    </li>
-                    <li class="suboption">
-                    <a href="#">Update</a>
-                    </li>
-                </ul>
-            <a href="#manageSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle option"><i class="fa fa-graduation-cap" aria-hidden="true" style="color: aliceblue"></i>
-                Edit Program Structure</a>
-                <ul class="list-unstyled collapse" id="manageSubmenu">
-                    <li class="suboption">
-                    <a href="#">Manage Progarm</a>
-                    </li>
-                    <li class="suboption">
-                    <a href="#">Manage Sub-program</a>
-                    </li >
-                </ul>
+        
+            <a href="#manageSubmenu" data-toggle="collapse" aria-expanded="true" ><i class="fa fa-address-book" aria-hidden="true" style="color: aliceblue"></i>
+                 Manage Contacts</a>
+                
             <a href="#udashboardSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle option"><i class="fa fa-user-circle" aria-hidden="true" style="color: aliceblue"></i>
                 Manage User Dashboard</a>
                 <ul class="list-unstyled collapse" id="udashboardSubmenu">
@@ -102,28 +83,10 @@
                         <a href="#">University</a>
                     </li>
                 </ul>
-            <a href="#" class=""><i class="fa fa-pencil" aria-hidden="true" style="color: aliceblue"></i>Manage Instructor</a>
-            <a href="#" class=""><i class="fa fa-folder" aria-hidden="true" style="color: aliceblue"></i>QuestionBank App</a>
-            <a href="#" class=""><i class="fa fa-pencil" aria-hidden="true" style="color: aliceblue"></i>Recommendation Models</a>
-            <a href="#" class=""><i class="fa fa-folder" aria-hidden="true" style="color: aliceblue"></i>Academy Assets App</a>
-            <a href="#" class=""><i class="fa fa-folder" aria-hidden="true" style="color: aliceblue"></i>Gamification App</a>
-            <a href="#" class=""><i class="fa fa-line-chart" aria-hidden="true" style="color: aliceblue"></i>Analytics</a>
-            <a href="#scoresSubmenu" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle option"><i class="fa fa-pencil" aria-hidden="true" style="color: aliceblue"></i>
-                Manage Others</a>
-                <ul class="list-unstyled collapse" id="scoresSubmenu">
-                    <li class="suboption">
-                    <a href="#">Scores</a>
-                    </li>
-                    <li class="suboption">
-                    <a href="#">Feedback</a>
-                    </li>
-                    <li class="suboption">
-                    <a href="#">Awards</a>
-                    </li>
-                    <li class="suboption">
-                        <a href="#">University</a>
-                    </li>
-                </ul>
+            
+            
+         
+        
             <a href="../admin_login.php" class=""><i class="fa fa-sign-out" aria-hidden="true" style="color: aliceblue"></i>Logout</a>
           </div>
           
@@ -131,13 +94,13 @@
           <div class="acaheader" id="topheader">
             <div class="container-fluid text5">
                 <nav class="navbar navbar-expand-lg bg navbar-light">
+                    <a class="navbar-brand" href="">
+                    
                     <button class="navbar-toggler" onclick="openNav()" type="button">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                     <label class="dash">Dashboard <i class="fa fa-home" aria-hidden="true" style="color: black"></i></label>
-                    <li class="nav-item">
-                        <button class="button-report">View Reports</button>
-                    </li>
+                    
                     <!-- Toggler/collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -145,7 +108,9 @@
                     <!-- Navbar links -->
                     <div class="navbar-collapse collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav mr-auto">
-                            
+                            <li class="nav-item" class="pull-right">
+                        <button class="button-report">View Reports</button>
+                    </li>
                         </ul>
                         <ul class="navbar-nav ml-auto font-weight-bold">
                             <a href="#" class="notification">
@@ -160,98 +125,27 @@
                                         <a><i class="fa fa-search" type="submit" for="autocomplete-3" style="font-size:25px;background-color:white;" aria-hidden="true"></i></a>
                                     </div>
                                 </form>
+                                
                             </li>
-                            
+                            <li class="nav-item"><img src="php-mysql-logo.jpg" class="pull-right" style="width:50px; height:35px; "></a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-        <section class="courses">
-            <div class="container" style="text-align: center;">
-                <label class="section-header">Courses</label>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/mean.jpg" alt="John" style="width:100%">
-                            <h3 class="pt-2">Mean Stack</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                         
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/java.jpg" alt="John" style="width:100%;height: 50%">
-                            <h3 class="pt-2">Full Stack Java</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                           
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/ml.jpg" alt="John" style="width:100%">
-                            <h3 class="pt-2">Machine Learning</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/cc.jpg" alt="John" style="width:100%">
-                            <h3 class="pt-2">Cloud Computing</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/ansible.jpg" alt="John" style="width:100%">
-                            <h3 class="pt-2">Ansible</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                         
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/net.jpg" alt="John" style="width:100%;height: 50%">
-                            <h3 class="pt-2">Backend Asp.net</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                           
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/java.jpg" alt="John" style="width:100%">
-                            <h3 class="pt-2">Full Stack Java</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <div class="card-profile">
-                            <img src="images/data.jpg" alt="John" style="width:100%">
-                            <h3 class="pt-2">Data Science</h3>
-                            <p class="title-person"></p>
-                            <p></p>
-                            <p><button class="button-class">Add to list</button></p>
-                        </div>
-                    </div>
-                </div>
-            </div>	   
-        </section>
+      
         
     </body>
 </html>
+<style type="text/css">
+    body{
+        background-image: url(../adminbg.png);
+    }
+    .navbar{
+        background-color:transparent;
+    }
+    .button-report{
+        width: 250px;
+        display: inline-block;
+    }
+</style>
