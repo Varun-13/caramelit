@@ -2,7 +2,7 @@
 
 //define constant variables
 
-define('DB_NAME','user_reg_login');
+define('DB_NAME','caramelit');
 define('DB_USER','root');
 define('DB_PASSWORD','zap');
 define('DB_HOST','localhost');
